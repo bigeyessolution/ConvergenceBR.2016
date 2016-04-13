@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    This file is part of com.bigeyessolution.ConvergenceBRApp.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-svg-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <title>Convergence Brasil 2016</title>
+    </head>
+    <body>
+        
+        <footer data-role="footer" data-position="fixed" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#agenda"><i class="fa fa-calendar fa-3x" aria-hidden="true"></i><br>Agenda</a></li>
+                    <li><a href="#sobre"><i class="fa fa-info fa-3x" aria-hidden="true"></i><br>O evento</a></li>
+                    <li><a href="#palestrantes"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br>Palestrantes</a></li>
+                    <li><a href="#parceiros"><i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i><br>Parceiros</a></li>
+                    <li><a href="#mapa"><i class="fa fa-map fa-3x" aria-hidden="true"></i><br>Como chegar</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </footer>
+
+        <section id="agenda" data-role="page" data-title="Agenda">
+
+        </section>
+
+        <section id="sobre" data-role="page" data-title="O evento">
+
+        </section>
+
+        <section id="palestrantes" data-role="page" data-title="Palestrantes">
+
+        </section>
+
+        <section id="parceiros" data-role="page" data-title="Parceiros">
+
+        </section>
+        
+        <section id="mapa" data-role="page" data-title="Como chegar">
+            
+        </section>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
