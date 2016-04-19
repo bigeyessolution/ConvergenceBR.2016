@@ -52,11 +52,11 @@
         <footer data-role="footer" data-position="fixed" data-theme="a">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#agenda-10"><i class="fa fa-calendar" aria-hidden="true"></i><span>Agenda</span></a></li>
-                    <li><a href="#sobre"><i class="fa fa-info" aria-hidden="true"></i><span>Sobre</span></a></li>
-                    <li><a href="#palestrantes"><i class="fa fa-users" aria-hidden="true"></i><span>Palestrantes</span></a></li>
-                    <li><a href="#parceiros"><i class="fa fa-puzzle-piece" aria-hidden="true"></i><span>Parceiros</span></a></li>
-                    <li><a href="#mapa"><i class="fa fa-map" aria-hidden="true"></i><span>Localização</span></a></li>
+                    <li><a href="#agenda-10"><i class="fa fa-3x fa-calendar" aria-hidden="true"></i><span>Agenda</span></a></li>
+                    <li><a href="#sobre"><i class="fa fa-3x fa-info" aria-hidden="true"></i><span>Sobre</span></a></li>
+                    <li><a href="#palestrantes"><i class="fa fa-3x fa-users" aria-hidden="true"></i><span>Palestrantes</span></a></li>
+                    <li><a href="#parceiros"><i class="fa fa-3x fa-puzzle-piece" aria-hidden="true"></i><span>Parceiros</span></a></li>
+                    <li><a href="#mapa"><i class="fa fa-3x fa-map" aria-hidden="true"></i><span>Localização</span></a></li>
                 </ul>
             </div><!-- /navbar -->
         </footer>
@@ -76,21 +76,21 @@
 			
 			<div role="main" class="ui-content">
 				<ul data-role="listview">
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala1.png">
 						<h2>Primeiro Item</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala2.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala3.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
@@ -98,42 +98,42 @@
 					</a></li>
 					
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala1.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala2.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala3.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
-					</a></li>
+					</a data-icon="false"></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala1.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala2.png">
 						<h2>ASME Section VIII - Division 2</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
 						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
 					</a></li>
 					
-					<li><a href="">
+					<li data-icon="false"><a href="">
 						<img src="img/sala3.png">
 						<h2>Último item</h2>
 						<p><strong>Jairo Mola, Unitécnica</strong></p>
@@ -178,7 +178,9 @@
 		
         <section id="sobre" data-role="page" data-title="Sobre o evento">
         	<header>
-        		<h1>Sobre o evento</h1>
+        	<div data-role="navbar"><ul>
+        		<li><a><h1>Sobre o evento</h1></a></li>
+        	</ul></div>
         	</header>
         	
 			<div role="main" class="ui-content">
@@ -187,7 +189,9 @@
 
         <section id="palestrantes" data-role="page" data-title="Palestrantes">
 			<header>
-        		<h1>Palestrantes</h1>
+				<div data-role="navbar"><ul>
+        		<li><a><h1>Palestrantes</h1></a></li>
+        		</ul></div>
         	</header>
         	
         	<div role="main" class="ui-content">
@@ -204,7 +208,9 @@
 
         <section id="parceiros" data-role="page" data-title="Parceiros">
 			<header>
-        		<h1>Parceiros</h1>
+				<div data-role="navbar"><ul>
+        			<li><a><h1>Parceiros</h1></a></li>
+        		</ul></div>
         	</header>
         	
         	<div role="main" class="ui-content">
@@ -213,7 +219,9 @@
         
         <section id="mapa" data-role="page" data-title="Local">
             <header>
-        		<h1>Localização</h1>
+            	<div data-role="navbar"><ul>
+        			<li><a><h1>Localização</h1></a></li>
+        		</ul></div>
         	</header>
         	
         	<div role="main" class="ui-content">
