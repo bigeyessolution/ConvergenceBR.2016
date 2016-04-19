@@ -14,18 +14,16 @@
   * You should have received a copy of the GNU General Public License
   * along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
   */
- 
- $( document ).on( "mobileinit", function() {
-  $.mobile.loader.prototype.options.text = "loading";
-  $.mobile.loader.prototype.options.textVisible = false;
-  $.mobile.loader.prototype.options.theme = "a";
-  $.mobile.loader.prototype.options.html = '<i class="fa fa-pulse fa-spin fa-5x fa-fw margin-bottom"></i>';
+
+$( document ).on( "mobileinit", function() {
+	$.mobile.loader.prototype.options.text = "loading";
+	$.mobile.loader.prototype.options.textVisible = false;
+	$.mobile.loader.prototype.options.theme = "a";
+	$.mobile.loader.prototype.options.html = '<i class="fa fa-pulse fa-spin fa-5x fa-fw margin-bottom"></i>';
 });
 
 $( document ).on( "pagecontainerbeforechange", function(event, ui) {
 	$( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
-	
-	//$.mobile.defaultPageTransition = 'slide';
 });
 
 $( document ).on( "pagecontainerchange", function(event, ui) {
@@ -36,19 +34,28 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 		$( '.ui-footer a[href="#agenda-10"]' ).addClass( "ui-btn-active" );
 		
 	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
+	
+	/*
+	$.getJSON ('http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json', function (data) {
+		console.log(JSON.stringify(data));
+	});
+	*/
 });
 
 $(function() {
-/*
-  $.mobile.loading( "show", {
-    text: "foo",
-    textVisible: false,
-    theme: "a",
-    html: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>'
-  });
-*/
-
-
   $( "[data-role='navbar']" ).navbar();
   $( "[data-role='header'], [data-role='footer']" ).toolbar();  
 });
+
+function showLoading() {
+	$.mobile.loading( "show", {
+		text: "foo",
+		textVisible: false,
+		theme: "a",
+		html: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>'
+	});
+}
+
+function hideLoading() {
+	$.mobile.loading( "hide" );
+}

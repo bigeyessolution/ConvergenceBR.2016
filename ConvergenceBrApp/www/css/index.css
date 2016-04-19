@@ -23,7 +23,13 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 
 .ui-header {
 	height: 4rem;
+	
 	background: #fff;
+
+	background: -moz-linear-gradient(-45deg, #1ab655 22%, #ffffff 56%);
+	background: -webkit-linear-gradient(-45deg, #1ab655 22%,#ffffff 56%);
+	background: linear-gradient(135deg, #1ab655 22%,#ffffff 56%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ab655', endColorstr='#ffffff',GradientType=1 );
 }
 
 .ui-header .ui-title {
@@ -138,5 +144,17 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 */
 }
 
+.ui-be-palestrante, .ui-be-parceiro {
+	text-align: center;
+	margin-bottom: 1rem;
+}
 
+.ui-be-palestrante img, .ui-be-parceiro img {
+	height: 15rem;
+}
+
+.ui-be-palestrante p, .ui-be-parceiro p {
+	text-align: justify;
+	text-indent: 1rem;
+}
 

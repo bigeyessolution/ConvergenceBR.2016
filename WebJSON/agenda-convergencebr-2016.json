@@ -1,0 +1,22 @@
+{
+	"evento":"ConvergenceBR 2016",
+	"agenda10": [
+		{
+			"titulo": "Título da Palestra",
+			"inicio": "8:30",
+			"palestrante": "Nome do Palestrante",
+			"instituto": "Nome da Instituição"
+		}
+	],
+	"agenda11": [
+	],
+	"agenda12": [
+	],
+	"palestrantes":[
+		{
+			"nome": "Nome do Palestrante",
+			"photo": "http://static.bigeyessolution.com/img/convergencebr2016/vanlivre.png",
+			"minicurriculo": "Mini-currículo descritivo em um único parágrafo. Não usaremos tags aqui."
+		}
+	]
+}
