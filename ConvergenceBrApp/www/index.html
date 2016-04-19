@@ -27,6 +27,7 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -43,37 +44,180 @@
         <title>Convergence Brasil 2016</title>
     </head>
     <body>
+    
+    	<header data-role="header" data-position="fixed" data-theme="a">
+    		<h1>&nbsp;</h1>
+    	</header>
         
         <footer data-role="footer" data-position="fixed" data-theme="a">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#agenda"><i class="fa fa-calendar fa-3x" aria-hidden="true"></i><br>Agenda</a></li>
-                    <li><a href="#sobre"><i class="fa fa-info fa-3x" aria-hidden="true"></i><br>O evento</a></li>
-                    <li><a href="#palestrantes"><i class="fa fa-users fa-3x" aria-hidden="true"></i><br>Palestrantes</a></li>
-                    <li><a href="#parceiros"><i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i><br>Parceiros</a></li>
-                    <li><a href="#mapa"><i class="fa fa-map fa-3x" aria-hidden="true"></i><br>Como chegar</a></li>
+                    <li><a href="#agenda-10"><i class="fa fa-calendar" aria-hidden="true"></i><span>Agenda</span></a></li>
+                    <li><a href="#sobre"><i class="fa fa-info" aria-hidden="true"></i><span>Sobre</span></a></li>
+                    <li><a href="#palestrantes"><i class="fa fa-users" aria-hidden="true"></i><span>Palestrantes</span></a></li>
+                    <li><a href="#parceiros"><i class="fa fa-puzzle-piece" aria-hidden="true"></i><span>Parceiros</span></a></li>
+                    <li><a href="#mapa"><i class="fa fa-map" aria-hidden="true"></i><span>Localização</span></a></li>
                 </ul>
             </div><!-- /navbar -->
         </footer>
 
-        <section id="agenda" data-role="page" data-title="Agenda">
-
+		<!-- agenda -->
+		
+		<section id="agenda-10" data-role="page" data-title="Agenda">
+			<header>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda-10">10 de maio</a></li>
+					<li><a href="#agenda-11">11 de maio</a></li>
+					<li><a href="#agenda-12">12 de maio</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+				<ul data-role="listview">
+					<li><a href="">
+						<img src="img/sala1.png">
+						<h2>Primeiro Item</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala2.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala3.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					
+					<li><a href="">
+						<img src="img/sala1.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala2.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala3.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala1.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala2.png">
+						<h2>ASME Section VIII - Division 2</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+					<li><a href="">
+						<img src="img/sala3.png">
+						<h2>Último item</h2>
+						<p><strong>Jairo Mola, Unitécnica</strong></p>
+						<p class="ui-li-aside"><strong>8:30</strong>AM</p>
+					</a></li>
+					
+				</ul>
+			</div>
         </section>
 
-        <section id="sobre" data-role="page" data-title="O evento">
+		<section id="agenda-11" data-role="page" data-title="Agenda">
+			<header>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda-10">10 de maio</a></li>
+					<li><a href="#agenda-11">11 de maio</a></li>
+					<li><a href="#agenda-12">12 de maio</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+			</div>
+        </section>
+        
+        <section id="agenda-12" data-role="page" data-title="Agenda">
+			<header>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda-10">10 de maio</a></li>
+					<li><a href="#agenda-11">11 de maio</a></li>
+					<li><a href="#agenda-12">12 de maio</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+			</div>
+        </section>
 
+		<!-- Fim agenda -->
+		
+        <section id="sobre" data-role="page" data-title="Sobre o evento">
+        	<header>
+        		<h1>Sobre o evento</h1>
+        	</header>
+        	
+			<div role="main" class="ui-content">
+			</div>
         </section>
 
         <section id="palestrantes" data-role="page" data-title="Palestrantes">
-
+			<header>
+        		<h1>Palestrantes</h1>
+        	</header>
+        	
+        	<div role="main" class="ui-content">
+        		<div class="ui-be-palestrante">
+        			<img src="img/palestrantes/vanlivre.png">
+        			<h2>Nome do Palestrante</h2>
+        			<p>
+        			Mini-currículo do palestrante e taus. Mas pode ser um monte 
+        			de coisa para pular linha e ver como fica.
+        			</p>
+        		</div>
+			</div>
         </section>
 
         <section id="parceiros" data-role="page" data-title="Parceiros">
-
+			<header>
+        		<h1>Parceiros</h1>
+        	</header>
+        	
+        	<div role="main" class="ui-content">
+			</div>
         </section>
         
-        <section id="mapa" data-role="page" data-title="Como chegar">
-            
+        <section id="mapa" data-role="page" data-title="Local">
+            <header>
+        		<h1>Localização</h1>
+        	</header>
+        	
+        	<div role="main" class="ui-content">
+			</div>
         </section>
 
         <script type="text/javascript" src="cordova.js"></script>

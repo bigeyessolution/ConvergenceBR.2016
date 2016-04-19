@@ -22,32 +22,33 @@
   $.mobile.loader.prototype.options.html = '<i class="fa fa-pulse fa-spin fa-5x fa-fw margin-bottom"></i>';
 });
 
-$( document ).on( "pagecontainerchange", function() {//TODO usar outra forma para selecionar paginas
-    // Each of the four pages in this demo has a data-title attribute
-    // which value is equal to the text of the nav button
-    // For example, on first page: <div data-role="page" data-title="Info">
-    var current = $( ".ui-page-active" ).jqmData( "title" );
-    // Change the heading
-    $( "[data-role='header'] h1" ).text( current );
-    // Remove active class from nav buttons
-    $( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
-    // Add active class to current nav button
-    $( "[data-role='navbar'] a" ).each(function() {
-        if ( $( this ).text() === current ) {
-            $( this ).addClass( "ui-btn-active" );
-        }
-    });
+$( document ).on( "pagecontainerbeforechange", function(event, ui) {
+	$( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
+	
+	//$.mobile.defaultPageTransition = 'slide';
+});
+
+$( document ).on( "pagecontainerchange", function(event, ui) {
+	var toPage = $(ui.toPage).attr('id');
+	var prevPage = $(ui.prevPage).attr('id');
+	
+	if (toPage === 'agenda-11' || toPage === 'agenda-12')
+		$( '.ui-footer a[href="#agenda-10"]' ).addClass( "ui-btn-active" );
+		
+	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
 });
 
 $(function() {
+/*
   $.mobile.loading( "show", {
     text: "foo",
     textVisible: false,
     theme: "a",
     html: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>'
   });
+*/
+
 
   $( "[data-role='navbar']" ).navbar();
-  $( "[data-role='header'], [data-role='footer']" ).toolbar();
-  
+  $( "[data-role='header'], [data-role='footer']" ).toolbar();  
 });
