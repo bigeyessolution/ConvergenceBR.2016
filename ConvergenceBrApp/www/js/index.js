@@ -35,11 +35,11 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 		
 	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
 	
-	/*
+	
 	$.getJSON ('http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json', function (data) {
 		console.log(JSON.stringify(data));
 	});
-	*/
+	
 });
 
 $(function() {
