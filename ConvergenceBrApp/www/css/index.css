@@ -25,11 +25,6 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 	height: 4rem;
 	
 	background: #fff;
-
-	background: -moz-linear-gradient(-45deg, #1ab655 22%, #ffffff 56%);
-	background: -webkit-linear-gradient(-45deg, #1ab655 22%,#ffffff 56%);
-	background: linear-gradient(135deg, #1ab655 22%,#ffffff 56%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ab655', endColorstr='#ffffff',GradientType=1 );
 }
 
 .ui-header .ui-title {
@@ -42,7 +37,7 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 }
 
 .ui-footer, .ui-footer .ui-btn{
-	height: 5rem;
+	height: 4rem;
 }
 
 .ui-footer .ui-btn {
@@ -73,7 +68,7 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 }
 
 .ui-page > header .ui-btn {
-	line-height: 2rem;
+	line-height: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 
@@ -91,7 +86,7 @@ html, body, section, .ui-page { padding: 0!important; margin: 0 !important; }
 }
 
 .ui-page > .ui-content {
-	margin-top:7rem;
+	margin-top:9rem;
 	margin-bottom: 5rem;
 
 }
