@@ -15,6 +15,7 @@
   * along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
   */
 
+
 $( document ).on( "mobileinit", function() {
 	$.mobile.loader.prototype.options.text = "loading";
 	$.mobile.loader.prototype.options.textVisible = false;
