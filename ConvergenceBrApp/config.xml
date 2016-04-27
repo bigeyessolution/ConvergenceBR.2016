@@ -16,8 +16,8 @@
     <preference name="ShowSplashScreenSpinner" value="false"/>
     <preference name="Fullscreen" value="true" />
     <access origin="*" />
-    <access origin="http://static.bigeyessolution.com/img/" />
-    <access origin="http://static.bigeyessolution.com/json/" />
+    <access origin="http://static.bigeyessolution.com/img/*" />
+    <access origin="http://static.bigeyessolution.com/json/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
