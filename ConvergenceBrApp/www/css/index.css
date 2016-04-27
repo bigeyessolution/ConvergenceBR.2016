@@ -75,10 +75,10 @@ section > header > h1{
 	margin-bottom: 4.8rem;
 }
 
-#agenda-10 > .ui-content, 
-#agenda-11 > .ui-content,
-#agenda-12 > .ui-content {
-	margin-top:9rem;
+#agenda10 > .ui-content, 
+#agenda11 > .ui-content,
+#agenda12 > .ui-content {
+	margin-top:9rem !important;
 }
 
 .ui-content {
@@ -130,7 +130,7 @@ section > header > h1{
 
 /*Imagens dos botões para a NavBar*/
 
-.ui-footer .ui-navbar .ui-btn[href="#agenda-10"] {
+.ui-footer .ui-navbar .ui-btn[href="#agenda10"] {
 	margin-top: -0.4rem;
 	height: 5.8rem !important;
 	
@@ -140,7 +140,7 @@ section > header > h1{
 	border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.ui-footer .ui-btn[href="#agenda-10"] span {
+.ui-footer .ui-btn[href="#agenda10"] span {
 	height: 3.6rem;
 }
 
@@ -174,7 +174,7 @@ section > header > h1{
 	background-image: url('../img/icon/palestrantes.png');
 }
 
-.ui-footer .ui-navbar .ui-btn[href="#agenda-10"] span{
+.ui-footer .ui-navbar .ui-btn[href="#agenda10"] span{
 	background-image: url('../img/icon/agenda.png');
 }
 
@@ -199,7 +199,7 @@ section > header > h1{
 	background-image: url('../img/icon/palestrantes_on.png');
 }
 
-.ui-footer .ui-navbar .ui-btn-active[href="#agenda-10"] span{
+.ui-footer .ui-navbar .ui-btn-active[href="#agenda10"] span{
 	background-image: url('../img/icon/agenda_on.png');
 }
 

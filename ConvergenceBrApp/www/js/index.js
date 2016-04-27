@@ -31,16 +31,17 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 	var toPage = $(ui.toPage).attr('id');
 	var prevPage = $(ui.prevPage).attr('id');
 	
-	if (toPage === 'agenda-11' || toPage === 'agenda-12')
-		$( '.ui-footer a[href="#agenda-10"]' ).addClass( "ui-btn-active" );
+	if (toPage === 'agenda11' || toPage === 'agenda12')
+		$( '.ui-footer a[href="#agenda10"]' ).addClass( "ui-btn-active" );
 		
 	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
-	
-	
-	$.getJSON ('http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json', function (data) {
-		console.log(JSON.stringify(data));
-	});
-	
+		
+	if (toPage == "agenda10" || toPage=="agenda11" || toPage == "agenda12") {
+		$('#' + toPage + ' .ui-be-agenda').empty();
+		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+		getAgenda (toPage);
+	}
+		
 });
 
 $(function() {

@@ -37,23 +37,23 @@
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/preenche_agenda.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
         <title>Convergence Brasil 2016</title>
     </head>
     <body>
     
-    	<header data-role="header" data-position="fixed" data-theme="a">
+    	<header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
     		<h1>&nbsp;</h1>
     	</header>
         
-        <footer data-role="footer" data-position="fixed" data-theme="b">
+        <footer data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#sobre"><span></span>Sobre</a></li>
                     <li><a href="#palestrantes"><span></span>Palestrantes</a></li>
-                    <li><a href="#agenda-10"><span></span>Agenda</a></li>
+                    <li><a href="#agenda10"><span></span>Agenda</a></li>
                     <li><a href="#parceiros"><span></span>Parceiros</a></li>
                     <li><a href="#mapa"><span></span>Local</a></li>
                 </ul>
@@ -62,20 +62,20 @@
 
 		<!-- agenda -->
 		
-		<section id="agenda-10" data-role="page" data-title="Agenda">
+		<section id="agenda10" data-role="page" data-title="Agenda">
 			<header>				
             	<h1>Agenda</h1>
 				<div data-role="navbar">
 					<ul>
-					<li><a href="#agenda-10"><span>10 de maio</span></a></li>
-					<li><a href="#agenda-11">11 de maio</a></li>
-					<li><a href="#agenda-12">12 de maio</a></li>
+					<li><a href="#agenda10"><span>10 de maio</span></a></li>
+					<li><a href="#agenda11">11 de maio</a></li>
+					<li><a href="#agenda12">12 de maio</a></li>
 					</ul>
 				</div>
 			</header>
 			
 			<div role="main" class="ui-content">
-				<ul data-role="listview">
+				<ul data-role="listview" class="ui-be-agenda">
 					<li data-icon="false">
 						<h2>Primeiro Item</h2>
 						<p>Jairo Mola, Unitécnica</p>
@@ -126,35 +126,39 @@
 			</div>
         </section>
 
-		<section id="agenda-11" data-role="page" data-title="Agenda">
+		<section id="agenda11" data-role="page" data-title="Agenda">
 			<header>				
             	<h1>Agenda</h1>
 				<div data-role="navbar">
 					<ul>
-					<li><a href="#agenda-10">10 de maio</a></li>
-					<li><a href="#agenda-11"><span>11 de maio</span></a></li>
-					<li><a href="#agenda-12">12 de maio</a></li>
+					<li><a href="#agenda10">10 de maio</a></li>
+					<li><a href="#agenda11"><span>11 de maio</span></a></li>
+					<li><a href="#agenda12">12 de maio</a></li>
 					</ul>
 				</div>
 			</header>
 			
 			<div role="main" class="ui-content">
+				<ul data-role="listview" class="ui-be-agenda">
+				</ul>
 			</div>
         </section>
         
-        <section id="agenda-12" data-role="page" data-title="Agenda">
+        <section id="agenda12" data-role="page" data-title="Agenda">
 			<header>				
             	<h1>Agenda</h1>
 				<div data-role="navbar">
 					<ul>
-					<li><a href="#agenda-10">10 de maio</a></li>
-					<li><a href="#agenda-11">11 de maio</a></li>
-					<li><a href="#agenda-12"><span>12 de maio</span></a></li>
+					<li><a href="#agenda10">10 de maio</a></li>
+					<li><a href="#agenda11">11 de maio</a></li>
+					<li><a href="#agenda12"><span>12 de maio</span></a></li>
 					</ul>
 				</div>
 			</header>
 			
 			<div role="main" class="ui-content">
+				<ul data-role="listview" class="ui-be-agenda">
+				</ul>
 			</div>
         </section>
 
