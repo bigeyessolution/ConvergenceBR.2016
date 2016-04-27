@@ -31,6 +31,9 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 	var toPage = $(ui.toPage).attr('id');
 	var prevPage = $(ui.prevPage).attr('id');
 	
+	if (toPage === 'mapa') criarMapa();
+	if (prevPage === 'mapa') destruirMapa();
+
 	if (toPage === 'agenda11' || toPage === 'agenda12')
 		$( '.ui-footer a[href="#agenda10"]' ).addClass( "ui-btn-active" );
 		
@@ -50,8 +53,6 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 $(function() {
   $( "[data-role='navbar']" ).navbar();
   $( "[data-role='header'], [data-role='footer']" ).toolbar();
-
-	criarMapa();
 });
 
 function showLoading() {
@@ -67,12 +68,21 @@ function hideLoading() {
 	$.mobile.loading( "hide" );
 }
 
-
-var map = L.map('mapaLocal');
 function criarMapa () {
-	L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18
-}).addTo(map);
+	$('#mapa .ui-content').append('<div id="mapaLocal">');
+
+	var map = L.map('mapaLocal').setView([-23.5927513,-46.6508323], 17);
+
+	L.tileLayer(
+		'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy;OSM contributors',
+		maxZoom: 18
+	}).addTo(map);
+
+	L.marker([-23.5927513,-46.6508323]).addTo(map);
+}
+
+function destruirMapa() {
+	$('#mapa .ui-content').empty();
 }
 
