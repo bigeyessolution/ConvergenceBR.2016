@@ -71,15 +71,20 @@ function hideLoading() {
 function criarMapa () {
 	$('#mapa .ui-content').append('<div id="mapaLocal">');
 
-	var map = L.map('mapaLocal').setView([-23.5927513,-46.6508323], 17);
+	var localLatLng = L.latLng(-23.5928401,-46.6488079);
+
+	var map = L.map('mapaLocal', {
+		zoom: 17,
+		center: localLatLng,
+		zoomControl: false
+	}).setView([-23.5928401,-46.6488079],18);
 
 	L.tileLayer(
 		'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy;OSM contributors',
-		maxZoom: 18
+		attribution: '&copy;OSM contributors'
 	}).addTo(map);
 
-	L.marker([-23.5927513,-46.6508323]).addTo(map);
+	L.marker(localLatLng).addTo(map);
 }
 
 function destruirMapa() {
