@@ -76,7 +76,7 @@ function getAgenda (toPage) {
 
 	var urlAgenda = 'http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json';
 
-	$.getJSON(urlAgenda, function (data) { console.log(JSON.stringify(data));
+	$.getJSON(urlAgenda, function (data) {
 		agenda = data;
 		localStorage.agenda = JSON.stringify(data);
 	}).fail(done).done(done);
