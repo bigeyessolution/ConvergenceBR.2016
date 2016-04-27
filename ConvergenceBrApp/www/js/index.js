@@ -49,7 +49,9 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 
 $(function() {
   $( "[data-role='navbar']" ).navbar();
-  $( "[data-role='header'], [data-role='footer']" ).toolbar();  
+  $( "[data-role='header'], [data-role='footer']" ).toolbar();
+
+	criarMapa();
 });
 
 function showLoading() {
@@ -64,3 +66,13 @@ function showLoading() {
 function hideLoading() {
 	$.mobile.loading( "hide" );
 }
+
+
+var map = L.map('mapaLocal');
+function criarMapa () {
+	L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18
+}).addTo(map);
+}
+
