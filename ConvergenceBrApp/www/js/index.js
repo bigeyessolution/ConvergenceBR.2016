@@ -39,6 +39,9 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 	if (toPage == "agenda10" || toPage=="agenda11" || toPage == "agenda12") {
 		$('#' + toPage + ' .ui-be-agenda').empty();
 		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+
+		showLoading();
+
 		getAgenda (toPage);
 	}
 		

@@ -72,6 +72,8 @@ function getAgenda (toPage) {
 		$('#' + toPage + ' .ui-be-agenda').append(saida);
 		
 		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+
+		hideLoading();
 	}	
 
 	var urlAgenda = 'http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json';
