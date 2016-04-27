@@ -131,7 +131,7 @@ section > header > h1{
 /*Imagens dos botões para a NavBar*/
 
 .ui-footer .ui-navbar .ui-btn[href="#agenda-10"] {
-	margin-top: -1rem;
+	margin-top: -0.4rem;
 	height: 5.8rem !important;
 	
 	border: solid 1px #ddd;
@@ -141,7 +141,7 @@ section > header > h1{
 }
 
 .ui-footer .ui-btn[href="#agenda-10"] span {
-	height: 4rem;
+	height: 3.6rem;
 }
 
 .ui-footer {
