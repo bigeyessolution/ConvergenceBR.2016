@@ -24,7 +24,7 @@ html, body, section, .ui-page, #mapa .ui-content, #mapaLocal { padding: 0!import
 section > header > h1{
 	text-align: center;
 	color: #fff;
-	background-color: #798d8e;
+	background-color: #a49262;
 	margin: 0 !important;
 	padding: 0.5rem 0;
 }
@@ -174,8 +174,13 @@ section > header > h1{
 	background-image: url('../img/icon/palestrantes.png');
 }
 
+.ui-footer .ui-navbar .ui-block-c .ui-btn[href="#agenda10"]{
+	background-color: #1c3d50;
+	color: #fff;
+}
+
 .ui-footer .ui-navbar .ui-btn[href="#agenda10"] span{
-	background-image: url('../img/icon/agenda.png');
+	background-image: url('../img/icon/agenda_on.png');
 }
 
 .ui-footer .ui-navbar .ui-btn[href="#parceiros"] span{
@@ -187,7 +192,7 @@ section > header > h1{
 }
 
 .ui-footer .ui-navbar .ui-btn-active {
-	background: #1c3d50 !important;
+	background: #a49262 !important;
 	color: #fff !important; 
 }
 
@@ -207,7 +212,7 @@ section > header > h1{
 	background-image: url('../img/icon/parceiros_on.png');
 }
 
-.ui-footer .ui-btn-active[href="#mapa"] span {
+.ui-footer .ui-navbar .ui-btn-active[href="#mapa"] span {
 	background-image: url('../img/icon/local_on.png');
 }
 
@@ -223,13 +228,13 @@ section > header > h1{
 }
 
 .ui-listview li span{
-	color: #97a7a8;
+	color: #1c3d50;
 	font-size: 0.8rem;
 	font-style: italic;
 }
 
 .ui-listview li p{
-	color: #798d8e;
+	color: #231f20;
 	font-size: 0.9rem;
 	margin: 0.1em 0px !important;
 }
@@ -241,7 +246,19 @@ section > header > h1{
 .ui-be-sobre p{
 	text-align: justify;
 	padding: 0.3rem;
-	color: #798d8e;
+	color: #231f20;
+}
+
+.ui-be-parceiro p{
+	text-align: justify;
+	padding: 0.3rem;
+	color: #231f20;
+}
+
+#palestrantes p{
+	text-align: justify;
+	padding: 0.3rem;
+	color: #231f20;
 }
 
 .ui-be-sobre h1{
@@ -258,4 +275,16 @@ section > header > h1{
 
 .leaflet-pane {
 	z-index: 0 !important;
+}
+
+.mapa_sala{
+	width: 200%;
+	height: auto;
+	text-align: left !important;
+	margin-top: 5rem !important;
+	border-bottom: none !important;
+}
+
+.onde_ficar{
+	margin-top: 9rem !important;
 }

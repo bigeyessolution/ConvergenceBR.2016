@@ -38,6 +38,11 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 		$( '.ui-footer a[href="#agenda10"]' ).addClass( "ui-btn-active" );
 		
 	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
+
+	if (toPage === 'mapa2' || toPage === 'mapa3')
+		$( '.ui-footer a[href="#mapa"]' ).addClass( "ui-btn-active" );
+		
+	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
 		
 	if (toPage == "agenda10" || toPage=="agenda11" || toPage == "agenda12") {
 		$('#' + toPage + ' .ui-be-agenda').empty();
