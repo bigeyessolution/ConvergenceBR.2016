@@ -24,7 +24,7 @@ html, body, section, .ui-page, #mapa .ui-content, #mapaLocal { padding: 0!import
 section > header > h1{
 	text-align: center;
 	color: #fff;
-	background-color: #a49262;
+	background-color: #77c344;
 	margin: 0 !important;
 	padding: 0.5rem 0;
 }
@@ -174,13 +174,10 @@ section > header > h1{
 	background-image: url('../img/icon/palestrantes.png');
 }
 
-.ui-footer .ui-navbar .ui-block-c .ui-btn[href="#agenda10"]{
-	background-color: #1c3d50;
-	color: #fff;
-}
+
 
 .ui-footer .ui-navbar .ui-btn[href="#agenda10"] span{
-	background-image: url('../img/icon/agenda_on.png');
+	background-image: url('../img/icon/agenda.png');
 }
 
 .ui-footer .ui-navbar .ui-btn[href="#parceiros"] span{
@@ -192,7 +189,7 @@ section > header > h1{
 }
 
 .ui-footer .ui-navbar .ui-btn-active {
-	background: #a49262 !important;
+	background: #a3a3a3 !important;
 	color: #fff !important; 
 }
 
@@ -220,11 +217,11 @@ section > header > h1{
 /*Span e p da agenda*/
 
 .ui-navbar span{	
-	color: #1c3d50;
+	color: #3d9970;
 }
 
 .ui-listview li h2{
-	color: #1c3d50;
+	color: #535a65;
 }
 
 .ui-listview li span{

@@ -74,7 +74,7 @@ function hideLoading() {
 }
 
 function criarMapa () {
-	$('#mapa .ui-content').append('<div id="mapaLocal">');
+	$('#mapa .mapaView').append('<div id="mapaLocal">');
 
 	var localLatLng = L.latLng(-23.5928401,-46.6488079);
 
@@ -93,6 +93,6 @@ function criarMapa () {
 }
 
 function destruirMapa() {
-	$('#mapa .ui-content').empty();
+	$('#mapa .mapaView').empty();
 }
 
