@@ -1,5 +1,6 @@
-var agenda =
+var agenda = localStorage.agenda ? JSON.parse(localStorage.agenda) :
 {
+	"version": 0,
 	"agenda10" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{"salahora": "8:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 1"},
@@ -104,34 +105,44 @@ function setAgenda () {
 	}
 }
 
-function getAgenda (toPage) {
-	function done () {
-		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
-		
-		var lista = agenda[toPage];
+function populateAgenda(toPage) {
+	$('#' + toPage + ' .ui-be-agenda').empty();
+	$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+
+	showLoading();
+	
+	var lista = agenda[toPage];
 		var saida = '';
 		
-		function populate (key, linha) {
-			saida += '<li data-icon="false"' + (linha.divisao? ' data-role="list-divider"' : '') + '>'+
-				'<h2>' + linha.titulo + '</h2>' + 
-				'<p>' + linha.info + '</p>' + 
-				'<span>' + linha.salahora + '</span>' +
-				'</li>';
-		}
+	function populate (key, linha) {
+		saida += '<li data-icon="false"' + (linha.divisao? ' data-role="list-divider"' : '') + '>'+
+			'<h2>' + linha.titulo + '</h2>' + 
+			'<p>' + linha.info + '</p>' + 
+			'<span>' + linha.salahora + '</span>' +
+			'</li>';
+	}
 				
-		$.each(lista, populate);
+	$.each(lista, populate);
 		
-		$('#' + toPage + ' .ui-be-agenda').append(saida);
+	$('#' + toPage + ' .ui-be-agenda').append(saida);
+	
+	hideLoading();
 		
-		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+	$('#' + toPage + ' .ui-be-agenda').listview("refresh");
+}
 
-		hideLoading();
+
+function getAgenda (toPage) {
+	function done () {
+		populateAgenda(toPage);
 	}	
 
 	var urlAgenda = 'http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json';
 
 	$.getJSON(urlAgenda, function (data) {
+		if (data.version <= agenda.version) return;
+	
 		agenda = data;
 		localStorage.agenda = JSON.stringify(data);
-	}).fail(done).done(done);
+	});
 }

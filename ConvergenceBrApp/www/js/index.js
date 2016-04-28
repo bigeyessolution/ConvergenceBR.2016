@@ -45,11 +45,8 @@ $( document ).on( "pagecontainerchange", function(event, ui) {
 	$( 'a[href="#' + toPage + '"]' ).addClass( "ui-btn-active" );
 		
 	if (toPage == "agenda10" || toPage=="agenda11" || toPage == "agenda12") {
-		$('#' + toPage + ' .ui-be-agenda').empty();
-		$('#' + toPage + ' .ui-be-agenda').listview("refresh");
-
-		showLoading();
-
+		populateAgenda(toPage);
+		
 		getAgenda (toPage);
 	}
 		
