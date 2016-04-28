@@ -1,4 +1,5 @@
-var agenda = {
+var agenda =
+{
 	"agenda10" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{"salahora": "8:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 1"},
@@ -21,14 +22,64 @@ var agenda = {
 		{"salahora": "8:30 - Room Lorangerie I", "titulo": "ASME Section VIII - Division 2", "info": "Jairo Mola, Unitécnica"},
 		{"salahora": "8:30 - Room Lorangerie II", "titulo": "Model Verification for Finite Element Analysis", "info": "Giuseppe Mirlisenna, ESSS"},
 		{"salahora": "8:30 - Room Malmaison", "titulo": "Reduced Hydraulic Models Tests", "info": "César Felipe Nardy, Bardella"},
-		{"salahora": "9:30", "titulo": "Coffee break", "info": "", "divisao": true},
+		{"salahora": "9:50", "titulo": "Coffee break", "info": "", "divisao": true},
 		{"salahora": "10:20 - Versalles (Plenary session)", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
 		{"salahora": "10:30 - Versalles (Plenary session)", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
 		{"salahora": "11:10 - Versalles (Plenary session)", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
 		{"salahora": "11:50 - Versalles (Plenary session)", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
+		{"salahora": "14:00 - Room Lorangerie I", "titulo": "ANSYS Structural Mechanics", "info": "Software update"},
+		{"salahora": "14:00 - Room Lorangerie II", "titulo": "ANSYS Fluid Dynamics", "info": "Software update"},
+		{"salahora": "14:00 - Room Malmaison", "titulo": "modeFRONTIER", "info": "Software update"},
+		{"salahora": "14:00 - Room Chambord", "titulo": "Eletromagnetics", "info": "Software update"},
+
+		{"salahora": "14:30 - Room Lorangerie I (Workshop)", "titulo": "Workflow and Usability Enhancements in Workbench Mechanical 17.0", "info": "Pedro Cheroto, ESSS"},
+		{"salahora": "14:30 - Room Lorangerie I (Workshop)", "titulo": "Substructuring Analysis in Workbench Mechanical 17.0", "info": "Fabiano Diesel, ESSS"},
+		{"salahora": "14:30 - Room Lorangerie II (Workshop)", "titulo": "Working with new features in ANSYS CFD 17.0", "info": "Bruno Contessi, ESSS"},
+		{"salahora": "14:30 - Room Malmaison (Workshop)", "titulo": "ANSYS Enterprise Cloud", "info": "Vinicius Strugata, ESSS"},
+		{"salahora": "14:30 - Room Chambord (Workshop)", "titulo": "ANSYS Savant Introduction", "info": "Juliano Mologni, ESSS"},
+		{"salahora": "14:30 - Room Chambord (Workshop)", "titulo": "Eletromagnetics LF", "info": "Diogo Figueiredo, ESSS"},
+
+		{"salahora": "15:20 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Numerical Model Applied on Fatigue Life Predictions of In-Service Subsea Free Spanning Pipelines", "info": "Almir Sobral, PETROBRAS"},
+		{"salahora": "15:20 - Room Lorangerie II (Technical Session-CFD)", "titulo": "Computational Fluid Dynamics and Static Analysis Oriented to Bioprinting of Human Tissues and Organs", "info": "Fábio Albuquerque, CTI Renato Arche"},
+		{"salahora": "15:20 - Room Malmaison (Technical Session-FEA)", "titulo": "Structural Reinforcement of Gas Cleaning System for Blast Furnace", "info": "Bruno Martins, ISQ Brasil"},
+		{"salahora": "15:20 - Room Chambord (Technical Session-EMAG)", "titulo": "Multiphysics (Electromagnetics and Thermal) Simulation of a Microwave Oven", "info": "Juliano Mologni, ESSS"},
+
+		{"salahora": "15:40 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Comparison of Different Local Stress Approaches for Fatigue Assessment of Subsea Equipment Based on Finite Element Analysis", "info": "Hugo Bottino, Technip"},
+		{"salahora": "15:40 - Room Lorangerie II (Technical Session-CFD)", "titulo": "3D Design and Fluid-Structure Interactions Analyses of a Heart Valve Model Compared with a Polyurethane-Made Heart Valve", "info": "Janaína Dernowsek, CTI Renato Arche"},
+		{"salahora": "15:40 - Room Malmaison (Technical Session-FEA)", "titulo": "Thermo-Structural Analysis of a Steel Shop Converter Using Thermography Data", "info": "Luiz Otavio Rocha, USIMINAS"},
+		{"salahora": "15:40 - Room Chambord (Technical Session-EMAG)", "titulo": "Slotted Waveguide Antennas for Radar Applications ", "info": "Igor Feliciano, INATEL"},
+
+		{"salahora": "16:00 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Temperature Profile Evaluation on a Flexible Pipe within a Bend Stiffener", "info": "Marcelo Galardo, GE Wellstream e Pedro Cheroto, ESSS"},
+		{"salahora": "16:00 - Room Lorangerie II (Technical Session-CFD)", "titulo": "CFD analyses of a cement kiln", "info": "Renata Favalli, Dynamis Mecânica Aplicada Ltda."},
+		{"salahora": "16:00 - Room Malmaison (Technical Session-FEA)", "titulo": "Intuitive, Parametric and Topology Optimization Applied on Rollover Protective Structures of Agriculture Tractors", "info": "Igor Saveljevas, VirtualCAE"},
+		{"salahora": "16:00 - Room Chambord (Technical Session-EMAG)", "titulo": "Optically-controlled Reconfigurable Antennas and RF Devices for mm-wave Applications", "info": "Andreia Aparecida de Castro, UNIFEI"},
+
+		{"salahora": "16:20", "titulo": "Coffee break", "info": "", "divisao": true},
+
+		{"salahora": "16:50 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Simulations performed at the Brazilian Synchrotron Light Source", "info": "Allan Gilmour Anderson Jr., LNLS"},
+		{"salahora": "16:50 - Room Lorangerie II (Technical Session-CFD)", "titulo": "CFD Analysis on LNG Spheres Deluge System According to API Standard", "info": "Carlos Eduardo Reuther, PETROBRAS"},
+		{"salahora": "16:50 - Room Malmaison (Technical Session-CFD)", "titulo": "CFX in the Pump Improvements and in Business Opportunities", "info": "Ismael Nicholas, Higra Industrial"},
+		{"salahora": "16:50 - Room Chambord (Technical Session-EMAG)", "titulo": "Interoperability Analysis Between Different Radiant Systems Installed in the Same Metal Structure", "info": "Bruno Rodrigues Ferraz, SAVIS"},
+
+		{"salahora": "17:10 - Room Lorangerie I (Technical Session-FEA)", "titulo": "FEM Applications in Health Industry Equipment Evaluation", "info": "Bernardo Abrahão Campos Salles, GE Healthcare"},
+		{"salahora": "17:10 - Room Lorangerie II (Technical Session-CFD)", "titulo": "Simulation CFD of a riser-FCC using the approach continuous lumping on the cracking reactions", "info": "José Luis Gomez Vergel, UNICAMP"},
+		{"salahora": "17:10 - Room Malmaison (Technical Session-CFD)", "titulo": "Geometry Evaluation of PIG Iron Channel Using Computer Simulation", "info": "Leonardo Camilo dos Reis, Usiminas"},
+		{"salahora": "17:10 - Room Chambord (Technical Session-EMAG)", "titulo": "Design of X-Band Band-Pass Filter of Three Resonant Cavities based on SIW Technology", "info": "Ricardo Caranicola, EPUSP"},
 		
+		{"salahora": "17:30 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Structure Analisys of a Shiploader - Upper and Lower Structures", "info": "Cristian Zarichta, TMSA"},
+		{"salahora": "17:30 - Room Lorangerie II (Technical Session-CFD)", "titulo": "Multiphase CFD Analysis of Submerged Air Blowing into a Copper Converter", "info": "Alexandre Dolabella, Magnesita"},
+		{"salahora": "17:30 - Room Malmaison (Technical Session-CFD)", "titulo": "Analysis of Cavity Modes in a Compressor Suction Muffler", "info": "Vitor Ferreira de Almeida, Tecumseh do Brasil"},
+		{"salahora": "17:30 - Room Chambord (Technical Session-EMAG)", "titulo": "Engineering the 'Internet of Things' Using Simulation", "info": "Juliano Mologni, ESSS"},
+
+		{"salahora": "17:50 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Impact Energy Absorption by Steel Plates", "info": "Mario Augusto Castro, Technip"},
+		{"salahora": "17:50 - Room Lorangerie II (Technical Session-CFD)", "titulo": "How CFD can help us: the past and future", "info": "Karolline Ropelato, ESSS"},
+		{"salahora": "17:50 - Room Malmaison (Technical Session-CFD)", "titulo": "Coefficients of added mass for conceptual phase of platforms design", "info": "Thiago Pontin Tancredi, UFSC"},
 		
+		{"salahora": "18:10 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Technical Discussion FEA", "info": ""},
+		{"salahora": "18:10 - Room Lorangerie II (Technical Session-CFD)", "titulo": "Technical Discussion CFD", "info": ""},
+		{"salahora": "18:10 - Room Chambord (Technical Session-EMAG)", "titulo": "", "info": "Technical Discussion EMAG"},
+
 		{"salahora": "18:50", "titulo": "Cocktail", "info": "", "divisao": true}
 	],
 	"agenda12" : [
@@ -43,6 +94,7 @@ var agenda = {
 		{"salahora": "17:50", "titulo": "Convergence Best Paper Award / Academic Award", "info": "", "divisao": true}
 	]
 }
+;
 
 function setAgenda () {
 	if (localStorage.agenda) {
@@ -79,7 +131,7 @@ function getAgenda (toPage) {
 	var urlAgenda = 'http://static.bigeyessolution.com/json/agenda-convergencebr-2016.json';
 
 	$.getJSON(urlAgenda, function (data) {
-		agenda = data;
-		localStorage.agenda = JSON.stringify(data);
+//		agenda = data;
+//		localStorage.agenda = JSON.stringify(data);
 	}).fail(done).done(done);
 }
