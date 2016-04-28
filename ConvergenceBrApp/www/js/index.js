@@ -79,10 +79,10 @@ function criarMapa () {
 	var localLatLng = L.latLng(-23.5928401,-46.6488079);
 
 	var map = L.map('mapaLocal', {
-		zoom: 17,
+		zoom: 16,
 		center: localLatLng,
 		zoomControl: false
-	}).setView([-23.5928401,-46.6488079],18);
+	}).setView([-23.5928401,-46.6488079],16);
 
 	L.tileLayer(
 		'http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
