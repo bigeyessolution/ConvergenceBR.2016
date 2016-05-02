@@ -285,3 +285,34 @@ section > header > h1{
 .onde_ficar{
 	margin-top: 9rem !important;
 }
+
+/*Novo index*/
+
+.ui-be-agenda li{
+	padding: 0px !important;
+}
+
+.titulo_azul{
+	background-color: #4682B4 !important;
+}
+
+.titulo_azul a{
+	border: none !important;
+	background-color: #4682B4 !important;
+}
+
+.titulo_azul h2 a{
+	color: #fff !important;
+}
+
+.barra_azul{
+	border-left: 0.5rem solid #4682B4 !important;
+}
+
+.barra_azul h2, h6, span{
+	margin-left: 0.5rem !important;
+}
+
+.barra_pausa h4{
+	margin-left: 0.5rem !important;
+}

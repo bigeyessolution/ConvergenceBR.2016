@@ -93,3 +93,4 @@ function destruirMapa() {
 	$('#mapa .mapaView').empty();
 }
 
+

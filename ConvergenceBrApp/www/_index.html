@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+    This file is part of com.bigeyessolution.ConvergenceBRApp.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<script type="text/javascript" src="js/preenche_agenda.js"></script>
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/convergencebr.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/leaflet.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <title>Convergence Brasil 2016</title>
+    </head>
+    <body>
+    
+    	<header data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+    		<h1>&nbsp;</h1>
+    	</header>
+
+		<!-- agenda -->
+		
+		<section id="agenda10" data-role="page" data-title="Agenda">
+			<header>				
+            	<h1>Agenda</h1>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda10"><span>10 de maio</span></a></li>
+					<li><a href="#agenda11">11 de maio</a></li>
+					<li><a href="#agenda12">12 de maio</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+				<ul data-role="listview" class="ui-be-agenda">
+					<li data-icon="false" class="barra_pausas">
+						<h4>REGISTRATION OPEN</h4>
+						<span>8:00</span>
+					</li>
+				  	<li class="titulo_azul" data-role="collapsible" data-iconpos="false" data-inset="false">
+				   		<h2>TRAINING COURSES</h2>
+				    	<ul data-role="listview">				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Primeiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Segundo Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Terceiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>
+				    	</ul>
+				  	</li>
+					<li data-icon="false" class="barra_pausas">
+						<h4>REFRESHMENTS IN EXIBITHOIN AREA</h4>
+						<span>10:00</span>
+					</li>
+				  	<li class="titulo_azul" data-role="collapsible" data-iconpos="false" data-inset="false">
+				   		<h2>TRAINING COURSES</h2>
+				    	<ul data-role="listview">				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Primeiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Segundo Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Terceiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>
+				    	</ul>
+				  	</li>
+					<li data-icon="false" class="barra_pausas">
+						<h4>LAUNCH</h4>
+						<span>12:00</span>
+					</li>
+				  	<li class="titulo_azul" data-role="collapsible" data-iconpos="false" data-inset="false">
+				   		<h2>TRAINING COURSES</h2>
+				    	<ul data-role="listview">				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Primeiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Segundo Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Terceiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>
+				    	</ul>
+				  	</li>
+					<li data-icon="false" class="barra_pausas">
+						<h4>REFRESHMENTS IN EXIBITHOIN AREA</h4>
+						<span>15:30</span>
+					</li>
+				  	<li class="titulo_azul" data-role="collapsible" data-iconpos="false" data-inset="false">
+				   		<h2>TRAINING COURSES</h2>
+				    	<ul data-role="listview">				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Primeiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Segundo Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>				      		
+							<li class="barra_azul" data-icon="false">
+								<h2>Terceiro Item</h2>
+								<h6>Jairo Mola, Unitécnica</h6>
+								<span>Sala 20 - 8:30 AM</span>
+							</li>
+				    	</ul>
+				  	</li>
+					<li data-icon="false" class="barra_pausas">
+						<h4>END OF 1º DAY</h4>
+						<span>17:30</span>
+					</li>					
+				</ul>
+			</div>
+        </section>
+
+		<section id="agenda11" data-role="page" data-title="Agenda">
+			<header>				
+            	<h1>Agenda</h1>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda10">10 de maio</a></li>
+					<li><a href="#agenda11"><span>11 de maio</span></a></li>
+					<li><a href="#agenda12">12 de maio</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+				<ul data-role="listview" class="ui-be-agenda">
+				</ul>
+			</div>
+        </section>
+        
+        <section id="agenda12" data-role="page" data-title="Agenda">
+			<header>				
+            	<h1>Agenda</h1>
+				<div data-role="navbar">
+					<ul>
+					<li><a href="#agenda10">10 de maio</a></li>
+					<li><a href="#agenda11">11 de maio</a></li>
+					<li><a href="#agenda12"><span>12 de maio</span></a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div role="main" class="ui-content">
+				<ul data-role="listview" class="ui-be-agenda">
+				</ul>
+			</div>
+        </section>
+
+		<!-- Fim agenda -->
+		
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
