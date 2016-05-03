@@ -80,59 +80,14 @@
 			</header>
 			
 			<div role="main" class="ui-content">
-				<ul data-role="listview" class="ui-be-agenda">
-					<li data-icon="false">
-						<h2>Primeiro Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Segundo Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Terceiro Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Quarto Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Quinto Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Sexto Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Setimo Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Oitavo Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					<li data-icon="false">
-						<h2>Nono Item</h2>
-						<p>Jairo Mola, Unitécnica</p>
-						<span>Sala 20 - 8:30 AM</span>
-					</li>
-					
-				</ul>
+				<div class="ui-be-collapsibleset" data-role="collapsibleset">
+					<ul data-role="listview" class="ui-be-agenda"></ul>
+				</div>
 			</div>
         </section>
 
 		<section id="agenda11" data-role="page" data-title="Agenda">
-			<header>				
+			<header>
             	<h1>Agenda</h1>
 				<div data-role="navbar">
 					<ul>
@@ -142,15 +97,16 @@
 					</ul>
 				</div>
 			</header>
-			
+
 			<div role="main" class="ui-content">
-				<ul data-role="listview" class="ui-be-agenda">
-				</ul>
+				<div class="ui-be-collapsibleset" data-role="collapsibleset">
+					<ul data-role="listview" class="ui-be-agenda"></ul>
+				</div>
 			</div>
         </section>
-        
+
         <section id="agenda12" data-role="page" data-title="Agenda">
-			<header>				
+			<header>
             	<h1>Agenda</h1>
 				<div data-role="navbar">
 					<ul>
@@ -160,15 +116,16 @@
 					</ul>
 				</div>
 			</header>
-			
+
 			<div role="main" class="ui-content">
-				<ul data-role="listview" class="ui-be-agenda">
-				</ul>
+			  	<div class="ui-be-collapsibleset" data-role="collapsibleset">
+					<ul data-role="listview" class="ui-be-agenda"></ul>
+				</div>
 			</div>
         </section>
 
 		<!-- Fim agenda -->
-		
+
         <section id="sobre" data-role="page" data-title="Sobre o evento">
         	<header>
         		<h1>Sobre o evento</h1>
@@ -247,7 +204,7 @@
         	</header>
         	
         	<div role="main" class="ui-content">
-        		<div class="ui-body">
+        		<div class="ui-body"><a href="#agenda11">
         			<img src="img/palestrantes/ravi.png">
         			<h2>Ravi Kumar - ANSYS, Inc.</h2>
         			<h4>Regional Sales Director</h4>
@@ -255,8 +212,8 @@
         			<p>
         			Ravi Kumar é o diretor comercial da ANSYS para América Latina apoiando a equipe ESSS. Ele é responsável por estreitar o relacionamento com os clientes, promovendo o uso de simulações de engenharia e o crescimento de ANSYS. Ravi Kumar já trabalhou no gerenciamento de produtos ANSYS Workbench no departamento de Marketing da empresa e geriu o programa ANSYS Enhanced Solutions Partners. Ele concluiu o PhD em Dinâmicas de Sistemas e Controles pela University of Southern California, EUA. 
         			</p>
-        		</div>        		
-        		<div class="ui-body">
+        		</a></div>
+        		<div class="ui-body"><a href="#agenda11">
         			<img src="img/palestrantes/lucas.png">
         			<h2>Lucas Sanfelici - LNLS</h2>
         			<h4>Engineering Groups Manager</h4>
@@ -264,8 +221,8 @@
         			<p>
         			Lucas Sanfelici atua na área de instrumentação científica desde 2003, é Bacharel em Física e Engenheiro Eletricista pela Universidade Estadual de Campinas. Em 2005 se juntou à equipe do Laboratório Nacional de Luz Síncrotron (LNLS) trabalhando em diversos projetos para as linhas de luz e fonte de luz síncrotron. Atualmente é responsável pelo gerenciamento técnico de projetos envolvendo os grupos de engenharia e suporte da Divisão Científica do LNLS. 
         			</p>
-        		</div>        		
-        		<div class="ui-body">
+        		</a></div>
+        		<div class="ui-body"><a href="#agenda11">
         			<img src="img/palestrantes/luis.png">
         			<h2>Luis Carlos de Castro Santos, Ph.D. - Embraer</h2>
         			<h4>Engineering Supervisor</h4>
@@ -273,8 +230,8 @@
         			<p>
         			Luis Carlos de Castro Santos é formado em Engenharia Mecânica pela Universidade de Brasília (UnB), com mestrado em Engenharia Aeronáutica pelo Instituto Tecnológico de Aeronáutica (ITA) e doutorado em Engenharia Aeroespacial pelo Georgia Institute of Technology. Possui mais de 25 anos de experiência em Dinâmica dos Fluidos Computacional, Análise Numérica e Otimização. Atualmente é Supervisor de Engenharia para Sistemas de Simulação e CFD na EMBRAER. Ele também é professor no Departamento de Matemática Aplicada na Universidade de São Paulo. 
         			</p>
-        		</div>        		
-        		<div class="ui-body">
+        		</a></div>
+        		<div class="ui-body"><a href="#agenda12">
         			<img src="img/palestrantes/marcos.png">
         			<h2>Marcos Giovani Dropa de Bortoli - Embraco</h2>
         			<h4>Senior Researcher</h4>
@@ -282,8 +239,8 @@
         			<p>
         			Marcos Giovani Dropa de Bortoli possui graduação em Engenharia Mecânica pela Universidade Federal de Santa Catarina (UFSC) e mestrado em Engenharia Mecânica pela mesma instituição. Ele tem mais de 30 anos de experiência profissional em Pesquisa e Desenvolvimento (P&D) na Divisão de Compressores da Whirlpool (Embraco), atuou como responsável pela implementação de ANSYS nesta divisão em 1993. Atualmente, cursa doutorado em Ciência e Engenharia de Materiais e trabalha como pesquisador na Embraco. 
         			</p>
-        		</div>        		
-        		<div class="ui-body">
+        		</a></div>
+        		<div class="ui-body"><a href="#agenda12">
         			<img src="img/palestrantes/cassiano.png">
         			<h2>Cassiano Antunes Cezario - WEG</h2>
         			<h4>Consultant in R&D</h4>
@@ -291,7 +248,7 @@
         			<p>
         			Cassiano Antunes Cezario possui mais de 13 anos de experiência em pesquisa e Desenvolvimento (P&D) com fundo técnico na área mecânica, especialmente em experimentação e simulação numérica (Dinâmica dos Fluidos Computacional – CFD e Análise Estrutural – FEA). Possui conhecimento em melhoria de produtos e processos, com foco na conversão de pesquisa em produtos e benefícios do processo. Atualmente trabalha como Consultor de Pesquisa e Desenvolvimento (P&D) na WEG Equipamentos Elétricos S.A. – Motores. 
         			</p>
-        		</div>
+        		</a></div>
 			</div>
         </section>
 
@@ -364,7 +321,7 @@
 
 				<ul data-role="listview" class="ui-be-mapa3">
 					<li data-icon="false">
-						<p>Rua Sena Madureira 1355 Bloco 1 - Ibirapuera</p>
+						<p><a href="geo:-23.5928401,-46.6488079">Rua Sena Madureira 1355 Bloco 1 - Ibirapuera</a></p>
 					</li>
 				</ul>
 				</div>

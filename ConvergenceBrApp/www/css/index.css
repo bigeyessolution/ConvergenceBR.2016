@@ -288,31 +288,103 @@ section > header > h1{
 
 /*Novo index*/
 
-.ui-be-agenda li{
-	padding: 0px !important;
+.ui-be-collapsibleset {
+	margin: 0!important;
 }
 
-.titulo_azul{
-	background-color: #4682B4 !important;
+.ui-be-collapsible {
+	margin: 0!important;
+	padding-left: 0.5rem !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
 }
 
-.titulo_azul a{
+.ui-collapsible-content {
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.ui-collapsible-content ul {
+	padding-left: 0;
+}
+
+.ui-collapsible-content li {
+	border-bottom: 1px solid #ddd;
+}
+
+.ui-collapsible-heading a {
+	background-color: transparent !important;
+}
+
+.ui-listview a {
 	border: none !important;
-	background-color: #4682B4 !important;
+	text-decoration: none !important;
 }
 
-.titulo_azul h2 a{
+.ui-listview li a.ui-btn,
+.ui-listview li h2 {
+	white-space: normal !important;
+}
+
+.ui-collapsible-content ul li {
+	list-style: none !important;
+}
+
+.ui-be-agenda li{
+	padding-left: 1rem !important;
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem;
+}
+
+.ui-collapsible-heading a{
+	color: #231f20 !important;
+}
+
+.ui-be-training_course {
+	background-color: #76beea !important;
+	border-left: #76beea !important;
+}
+
+.ui-be-engineering-workshops {
+	background-color: #fbb161 !important;
+	border-left: #fbb161 !important;
+}
+
+.ui-be-plenary-session {
+	background-color: #b09ecc !important;
+	border-left: #b09ecc !important;
+}
+
+.ui-be-software-update {
+	background-color: #f7a19a !important;
+	border-left: #f7a19a !important;
+}
+
+.ui-be-technical-session {
+	background-color: #bad976 !important;
+	border-left: #bad976 !important;
+}
+
+.ui-be-workshop-application {
+	background-color: #ffee00 !important;
+	border-left: #ffee00 !important;
+}
+
+.ui-be-cocktail {
+	background-color: #ed1c24 !important;
+	border-left: #ed1c24 !important;
+}
+
+.ui-be-cocktail h2, .ui-be-cocktail span {
 	color: #fff !important;
 }
 
-.barra_azul{
-	border-left: 0.5rem solid #4682B4 !important;
+.ui-be-award {
+	background-color: #feefd8 !important;
+	border-left: #feefd8 !important;
 }
 
-.barra_azul h2, h6, span{
-	margin-left: 0.5rem !important;
-}
-
-.barra_pausa h4{
-	margin-left: 0.5rem !important;
+#palestrantes .ui-content a {
+	text-decoration: none;
 }
