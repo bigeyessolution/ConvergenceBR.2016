@@ -3,59 +3,110 @@ var agenda = localStorage.agenda ? JSON.parse(localStorage.agenda) :
 	"version": 0,
 	"agenda10" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
-		{"salahora": "8:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 1"},
-		{"salahora": "8:30", "titulo": "Structural Analysis Pre-processing and Convergence: how to Achieve Simulation Productivity", "info": "Course 2 - part 1"},
-		{"salahora": "8:30", "titulo": "Introduction to Acoustic Analysis: Simulation and Tests", "info": "Course 3 - part 1"},
-		{"salahora": "8:30", "titulo": "Optimization applied to Engineering: From Single Point Analysis to Parametric Analysis", "info": "Course 4 - part 1"},
-		{"salahora": "8:30", "titulo": "Introduction to Computer Simulation: from Modeling to Industry Applications", "info": "Course 5 - part 1"},
-		{"salahora": "8:30", "titulo": "Introduction do High Frequency Electromagnetic Simulation: from Modelling to Industry Applications", "info": "Course 6"},
+		{
+			"class": "ui-be-training_course",
+			"descricao": "Training courses",
+			"salahora": "8:30",
+			"itens": [
+				{"salahora": "8:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 1"},
+				{"salahora": "8:30", "titulo": "Structural Analysis Pre-processing and Convergence: how to Achieve Simulation Productivity", "info": "Course 2 - part 1"},
+				{"salahora": "8:30", "titulo": "Introduction to Acoustic Analysis: Simulation and Tests", "info": "Course 3 - part 1"},
+				{"salahora": "8:30", "titulo": "Optimization applied to Engineering: From Single Point Analysis to Parametric Analysis", "info": "Course 4 - part 1"},
+				{"salahora": "8:30", "titulo": "Introduction to Computer Simulation: from Modeling to Industry Applications", "info": "Course 5 - part 1"},
+				{"salahora": "8:30", "titulo": "Introduction do High Frequency Electromagnetic Simulation: from Modelling to Industry Applications", "info": "Course 6"}
+			]
+		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
-		{"salahora": "13:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 2"},
-		{"salahora": "13:30", "titulo": "Structural Analysis Pre-processing and Convergence: how to Achieve Simulation Productivity", "info": "Course 2 - part 2"},
-		{"salahora": "13:30", "titulo": "Introduction to Acoustic Analysis: Simulation and Tests", "info": "Course 3 - part 2"},
-		{"salahora": "13:30", "titulo": "Optimization applied to Engineering: From Single Point Analysis to Parametric Analysis", "info": "Course 4 - part 2"},
-		{"salahora": "13:30", "titulo": "Introduction to Computer Simulation: from Modeling to Industry Applications", "info": "Course 5 - part 2"},
-		{"salahora": "13:30", "titulo": "Introduction to System Analysis using ANSYS Simplorer", "info": "Course 7"},
+		{
+			"class": "ui-be-training_course",
+			"descricao": "Training courses",
+			"salahora": "8:30",
+			"itens": [
+				{"salahora": "13:30", "titulo": "Pre-processing and convergence in CFD: Improving productivity in simulation", "info": "Course 1 - part 2"},
+				{"salahora": "13:30", "titulo": "Structural Analysis Pre-processing and Convergence: how to Achieve Simulation Productivity", "info": "Course 2 - part 2"},
+				{"salahora": "13:30", "titulo": "Introduction to Acoustic Analysis: Simulation and Tests", "info": "Course 3 - part 2"},
+				{"salahora": "13:30", "titulo": "Optimization applied to Engineering: From Single Point Analysis to Parametric Analysis", "info": "Course 4 - part 2"},
+				{"salahora": "13:30", "titulo": "Introduction to Computer Simulation: from Modeling to Industry Applications", "info": "Course 5 - part 2"},
+				{"salahora": "13:30", "titulo": "Introduction to System Analysis using ANSYS Simplorer", "info": "Course 7"}
+			]
+		},
 		{"salahora": "17:30", "titulo": "Closing", "info": "", "divisao": true}
 	],
 	"agenda11" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
-		{"salahora": "8:30 - Room Lorangerie I", "titulo": "ASME Section VIII - Division 2", "info": "Jairo Mola, Unitécnica"},
-		{"salahora": "8:30 - Room Lorangerie II", "titulo": "Model Verification for Finite Element Analysis", "info": "Giuseppe Mirlisenna, ESSS"},
-		{"salahora": "8:30 - Room Malmaison", "titulo": "Reduced Hydraulic Models Tests", "info": "César Felipe Nardy, Bardella"},
+		{
+			"class": "ui-be-engineering-workshops",
+			"descricao": "Engineering Workshops",
+			"salahora": "8:30",
+			"itens": [
+				{"salahora": "8:30 - Room Lorangerie I", "titulo": "ASME Section VIII - Division 2", "info": "Jairo Mola, Unitécnica"},
+				{"salahora": "8:30 - Room Lorangerie II", "titulo": "Model Verification for Finite Element Analysis", "info": "Giuseppe Mirlisenna, ESSS"},
+				{"salahora": "8:30 - Room Malmaison", "titulo": "Reduced Hydraulic Models Tests", "info": "César Felipe Nardy, Bardella"}
+			]
+		},
 		{"salahora": "9:50", "titulo": "Coffee break", "info": "", "divisao": true},
-		{"salahora": "10:20 - Versalles (Plenary session)", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
-		{"salahora": "10:30 - Versalles (Plenary session)", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
-		{"salahora": "11:10 - Versalles (Plenary session)", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
-		{"salahora": "11:50 - Versalles (Plenary session)", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"},
+		{
+			"class": "ui-be-plenary-session",
+			"descricao": "Plenary session",
+			"salahora": "10:20",
+			"itens": [
+				{"salahora": "10:20 - Versalles", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
+				{"salahora": "10:30 - Versalles", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
+				{"salahora": "11:10 - Versalles", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
+				{"salahora": "11:50 - Versalles", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"}
+			]
+		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
-		{"salahora": "14:00 - Room Lorangerie I", "titulo": "ANSYS Structural Mechanics", "info": "Software update"},
-		{"salahora": "14:00 - Room Lorangerie II", "titulo": "ANSYS Fluid Dynamics", "info": "Software update"},
-		{"salahora": "14:00 - Room Malmaison", "titulo": "modeFRONTIER", "info": "Software update"},
-		{"salahora": "14:00 - Room Chambord", "titulo": "Eletromagnetics", "info": "Software update"},
-
-		{"salahora": "14:30 - Room Lorangerie I (Workshop)", "titulo": "Workflow and Usability Enhancements in Workbench Mechanical 17.0", "info": "Pedro Cheroto, ESSS"},
-		{"salahora": "14:30 - Room Lorangerie I (Workshop)", "titulo": "Substructuring Analysis in Workbench Mechanical 17.0", "info": "Fabiano Diesel, ESSS"},
-		{"salahora": "14:30 - Room Lorangerie II (Workshop)", "titulo": "Working with new features in ANSYS CFD 17.0", "info": "Bruno Contessi, ESSS"},
-		{"salahora": "14:30 - Room Malmaison (Workshop)", "titulo": "ANSYS Enterprise Cloud", "info": "Vinicius Strugata, ESSS"},
-		{"salahora": "14:30 - Room Chambord (Workshop)", "titulo": "ANSYS Savant Introduction", "info": "Juliano Mologni, ESSS"},
-		{"salahora": "14:30 - Room Chambord (Workshop)", "titulo": "Eletromagnetics LF", "info": "Diogo Figueiredo, ESSS"},
-
-		{"salahora": "15:20 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Numerical Model Applied on Fatigue Life Predictions of In-Service Subsea Free Spanning Pipelines", "info": "Almir Sobral, PETROBRAS"},
-		{"salahora": "15:20 - Room Lorangerie II (Technical Session-CFD)", "titulo": "Computational Fluid Dynamics and Static Analysis Oriented to Bioprinting of Human Tissues and Organs", "info": "Fábio Albuquerque, CTI Renato Arche"},
-		{"salahora": "15:20 - Room Malmaison (Technical Session-FEA)", "titulo": "Structural Reinforcement of Gas Cleaning System for Blast Furnace", "info": "Bruno Martins, ISQ Brasil"},
-		{"salahora": "15:20 - Room Chambord (Technical Session-EMAG)", "titulo": "Multiphysics (Electromagnetics and Thermal) Simulation of a Microwave Oven", "info": "Juliano Mologni, ESSS"},
-
-		{"salahora": "15:40 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Comparison of Different Local Stress Approaches for Fatigue Assessment of Subsea Equipment Based on Finite Element Analysis", "info": "Hugo Bottino, Technip"},
-		{"salahora": "15:40 - Room Lorangerie II (Technical Session-CFD)", "titulo": "3D Design and Fluid-Structure Interactions Analyses of a Heart Valve Model Compared with a Polyurethane-Made Heart Valve", "info": "Janaína Dernowsek, CTI Renato Arche"},
-		{"salahora": "15:40 - Room Malmaison (Technical Session-FEA)", "titulo": "Thermo-Structural Analysis of a Steel Shop Converter Using Thermography Data", "info": "Luiz Otavio Rocha, USIMINAS"},
-		{"salahora": "15:40 - Room Chambord (Technical Session-EMAG)", "titulo": "Slotted Waveguide Antennas for Radar Applications ", "info": "Igor Feliciano, INATEL"},
-
-		{"salahora": "16:00 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Temperature Profile Evaluation on a Flexible Pipe within a Bend Stiffener", "info": "Marcelo Galardo, GE Wellstream e Pedro Cheroto, ESSS"},
-		{"salahora": "16:00 - Room Lorangerie II (Technical Session-CFD)", "titulo": "CFD analyses of a cement kiln", "info": "Renata Favalli, Dynamis Mecânica Aplicada Ltda."},
-		{"salahora": "16:00 - Room Malmaison (Technical Session-FEA)", "titulo": "Intuitive, Parametric and Topology Optimization Applied on Rollover Protective Structures of Agriculture Tractors", "info": "Igor Saveljevas, VirtualCAE"},
-		{"salahora": "16:00 - Room Chambord (Technical Session-EMAG)", "titulo": "Optically-controlled Reconfigurable Antennas and RF Devices for mm-wave Applications", "info": "Andreia Aparecida de Castro, UNIFEI"},
-
+		{
+			"class": "ui-be-software-update",
+			"descricao": "Software Update",
+			"salahora": "14:00",
+			"itens": [
+				{"salahora": "14:00 - Room Lorangerie I", "titulo": "ANSYS Structural Mechanics", "info": ""},
+				{"salahora": "14:00 - Room Lorangerie II", "titulo": "ANSYS Fluid Dynamics", "info": ""},
+				{"salahora": "14:00 - Room Malmaison", "titulo": "modeFRONTIER", "info": ""},
+				{"salahora": "14:00 - Room Chambord", "titulo": "Eletromagnetics", "info": ""}
+			]
+		},
+		{
+			"class": "ui-be-workshop-application",
+			"descricao": "Workshop/Application",
+			"salahora": "14:30",
+			"itens": [
+				{"salahora": "14:30 - Room Lorangerie I", "titulo": "Workflow and Usability Enhancements in Workbench Mechanical 17.0", "info": "Pedro Cheroto, ESSS"},
+				{"salahora": "14:30 - Room Lorangerie I", "titulo": "Substructuring Analysis in Workbench Mechanical 17.0", "info": "Fabiano Diesel, ESSS"},
+				{"salahora": "14:30 - Room Lorangerie II", "titulo": "Working with new features in ANSYS CFD 17.0", "info": "Bruno Contessi, ESSS"},
+				{"salahora": "14:30 - Room Malmaison", "titulo": "ANSYS Enterprise Cloud", "info": "Vinicius Strugata, ESSS"},
+				{"salahora": "14:30 - Room Chambord", "titulo": "ANSYS Savant Introduction", "info": "Juliano Mologni, ESSS"},
+				{"salahora": "14:30 - Room Chambord", "titulo": "Eletromagnetics LF", "info": "Diogo Figueiredo, ESSS"}
+			]
+		},
+		{
+			"class": "ui-be-technical-session",
+			"descricao": "Technical Session",
+			"salahora": "15:20",
+			"itens": [
+				{"salahora": "15:20 - Room Lorangerie I (FEA)", "titulo": "Numerical Model Applied on Fatigue Life Predictions of In-Service Subsea Free Spanning Pipelines", "info": "Almir Sobral, PETROBRAS"},
+				{"salahora": "15:20 - Room Lorangerie II (CFD)", "titulo": "Computational Fluid Dynamics and Static Analysis Oriented to Bioprinting of Human Tissues and Organs", "info": "Fábio Albuquerque, CTI Renato Arche"},
+				{"salahora": "15:20 - Room Malmaison (FEA)", "titulo": "Structural Reinforcement of Gas Cleaning System for Blast Furnace", "info": "Bruno Martins, ISQ Brasil"},
+				{"salahora": "15:20 - Room Chambord (EMAG)", "titulo": "Multiphysics (Electromagnetics and Thermal) Simulation of a Microwave Oven", "info": "Juliano Mologni, ESSS"}
+			]
+		},
+		{
+			"class": "ui-be-technical-session",
+			"descricao": "Technical Session",
+			"salahora": "15:40",
+			"itens": [
+				{"salahora": "15:40 - Room Lorangerie I (FEA)", "titulo": "Comparison of Different Local Stress Approaches for Fatigue Assessment of Subsea Equipment Based on Finite Element Analysis", "info": "Hugo Bottino, Technip"},
+				{"salahora": "15:40 - Room Lorangerie II (CFD)", "titulo": "3D Design and Fluid-Structure Interactions Analyses of a Heart Valve Model Compared with a Polyurethane-Made Heart Valve", "info": "Janaína Dernowsek, CTI Renato Arche"},
+				{"salahora": "15:40 - Room Malmaison (FEA)", "titulo": "Thermo-Structural Analysis of a Steel Shop Converter Using Thermography Data", "info": "Luiz Otavio Rocha, USIMINAS"},
+				{"salahora": "15:40 - Room Chambord (EMAG)", "titulo": "Slotted Waveguide Antennas for Radar Applications ", "info": "Igor Feliciano, INATEL"},
+				{"salahora": "16:00 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Temperature Profile Evaluation on a Flexible Pipe within a Bend Stiffener", "info": "Marcelo Galardo, GE Wellstream e Pedro Cheroto, ESSS"},
+				{"salahora": "16:00 - Room Lorangerie II (Technical Session-CFD)", "titulo": "CFD analyses of a cement kiln", "info": "Renata Favalli, Dynamis Mecânica Aplicada Ltda."},
+				{"salahora": "16:00 - Room Malmaison (Technical Session-FEA)", "titulo": "Intuitive, Parametric and Topology Optimization Applied on Rollover Protective Structures of Agriculture Tractors", "info": "Igor Saveljevas, VirtualCAE"},
+				{"salahora": "16:00 - Room Chambord (Technical Session-EMAG)", "titulo": "Optically-controlled Reconfigurable Antennas and RF Devices for mm-wave Applications", "info": "Andreia Aparecida de Castro, UNIFEI"}
+			]
+		},
 		{"salahora": "16:20", "titulo": "Coffee break", "info": "", "divisao": true},
 
 		{"salahora": "16:50 - Room Lorangerie I (Technical Session-FEA)", "titulo": "Simulations performed at the Brazilian Synchrotron Light Source", "info": "Allan Gilmour Anderson Jr., LNLS"},
