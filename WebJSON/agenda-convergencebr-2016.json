@@ -255,7 +255,7 @@
 			"descricao": "Free Workshops",
 			"salahora": "14:30",
 			"itens": [
-				{"salahora": "14:30 - Room Lorangerie I", "titulo": "ANSYS SpaceClaim Direct Modele", "info": "Pedro Cheroto, ESSS"},
+				{"salahora": "14:30 - Room Lorangerie I", "titulo": "ANSYS SpaceClaim Direct Modele", "info": "Rafael Vetturazzi, ESSS"},
 				{"salahora": "14:30 - Room Lorangerie II", "titulo": "ANSYS AIM: Simulation for Every Engineer", "info": "Luiz Amaral, ESSS"},
 				{"salahora": "14:30 - Room Malmaison", "titulo": "ROCKY and ANSYS CFD Coupling", "info": "Lucilla Almeida, ESSS"},
 				{"salahora": "14:30 - Room Chambord", "titulo": "CFD: CHEMKIN overview and hands on", "info": "Ana Paula Faria, ESSS"}
