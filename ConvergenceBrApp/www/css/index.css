@@ -78,7 +78,8 @@ section > header > h1{
 #agenda10 > .ui-content, 
 #agenda11 > .ui-content,
 #agenda12 > .ui-content {
-	margin-top:9rem !important;
+	margin-top: 0rem !important;
+	margin-left: 0 !important;
 }
 
 .ui-content {
@@ -158,9 +159,10 @@ section > header > h1{
 	display: block;
 	height: 3rem;
 
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.002rem;
+	margin-top: 0.07rem;
 	
-	background-size: auto 100%;
+	background-size: auto 70%;
 	background-repeat: no-repeat;
 	background-position: top center;
 	padding: 0;
@@ -218,6 +220,10 @@ section > header > h1{
 
 .ui-navbar span{	
 	color: #3d9970;
+}
+
+.ui-navbar ul li a{
+	font-size: 50% !important;
 }
 
 .ui-listview li h2{
@@ -387,4 +393,11 @@ section > header > h1{
 
 #palestrantes .ui-content a {
 	text-decoration: none;
+}
+
+
+@media screen and (min-width: 640px) {
+  .ui-navbar ul li a{	
+	font-size: 100% !important;
+}
 }
