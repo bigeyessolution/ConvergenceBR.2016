@@ -168,8 +168,7 @@
 			"itens": [
 				{"salahora": "16:50 - Room Lorangerie I", "titulo": "Simulations performed at the Brazilian Synchrotron Light Source", "info": "Allan Gilmour Anderson Jr., LNLS"},
 				{"salahora": "17:10 - Room Lorangerie I", "titulo": "FEM Applications in Health Industry Equipment Evaluation", "info": "Bernardo Abrahão Campos Salles, GE Healthcare"},
-				{"salahora": "17:30 - Room Lorangerie I", "titulo": "Structure Analisys of a Shiploader - Upper and Lower Structures", "info": "Cristian Zarichta, TMSA"},
-				{"salahora": "17:50 - Room Lorangerie I", "titulo": "Impact Energy Absorption by Steel Plates", "info": "Mario Augusto Castro, Technip"}
+				{"salahora": "17:30 - Room Lorangerie I", "titulo": "Structure Analisys of a Shiploader - Upper and Lower Structures", "info": "Cristian Zarichta, TMSA"}
 			]
 		},
 		{
@@ -180,8 +179,7 @@
 			"itens": [
 				{"salahora": "16:50 - Room Lorangerie II", "titulo": "CFD Analysis on LNG Spheres Deluge System According to API Standard", "info": "Carlos Eduardo Reuther, PETROBRAS"},
 				{"salahora": "17:10 - Room Lorangerie II", "titulo": "Simulation CFD of a riser-FCC using the approach continuous lumping on the cracking reactions", "info": "José Luis Gomez Vergel, UNICAMP"},
-				{"salahora": "17:30 - Room Lorangerie II", "titulo": "Multiphase CFD Analysis of Submerged Air Blowing into a Copper Converter", "info": "Alexandre Dolabella, Magnesita"},
-				{"salahora": "17:50 - Room Lorangerie II", "titulo": "How CFD can help us: the past and future", "info": "Karolline Ropelato, ESSS"}
+				{"salahora": "17:30 - Room Lorangerie II", "titulo": "Multiphase CFD Analysis of Submerged Air Blowing into a Copper Converter", "info": "Alexandre Dolabella, Magnesita"}
 			]
 		},
 		{
@@ -192,8 +190,7 @@
 			"itens": [
 				{"salahora": "16:50 - Room Malmaison", "titulo": "CFX in the Pump Improvements and in Business Opportunities", "info": "Ismael Nicholas, Higra Industrial"},
 				{"salahora": "17:10 - Room Malmaison", "titulo": "Geometry Evaluation of PIG Iron Channel Using Computer Simulation", "info": "Leonardo Camilo dos Reis, Usiminas"},
-				{"salahora": "17:30 - Room Malmaison", "titulo": "Analysis of Cavity Modes in a Compressor Suction Muffler", "info": "Vitor Ferreira de Almeida, Tecumseh do Brasil"},
-				{"salahora": "17:50 - Room Malmaison", "titulo": "Coefficients of added mass for conceptual phase of platforms design", "info": "Thiago Pontin Tancredi, UFSC"}
+				{"salahora": "17:30 - Room Malmaison", "titulo": "Analysis of Cavity Modes in a Compressor Suction Muffler", "info": "Vitor Ferreira de Almeida, Tecumseh do Brasil"}
 			]
 		},
 		{
@@ -207,9 +204,9 @@
 				{"salahora": "17:30 - Room Chambord", "titulo": "Engineering the 'Internet of Things' Using Simulation", "info": "Juliano Mologni, ESSS"}
 			]
 		},
-		{"salahora": "18:10", "titulo": "Technical Discussion", "info": "", "divisao": true},
+		{"salahora": "17:50", "titulo": "Technical Discussion", "info": "", "divisao": true},
 		
-		{"class": "ui-be-cocktail", "salahora": "18:50", "titulo": "Cocktail", "info": "", "divisao": true}
+		{"class": "ui-be-cocktail", "salahora": "18:10", "titulo": "Cocktail - atração musical", "info": "", "divisao": true}
 	],
 	"agenda12" : [
 		{

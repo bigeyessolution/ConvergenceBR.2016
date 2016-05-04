@@ -222,8 +222,8 @@ section > header > h1{
 	color: #3d9970;
 }
 
-.ui-navbar ul li a{
-	font-size: 50% !important;
+.ui-be-navbar ul li a{
+	font-size: 0.5rem !important;
 }
 
 .ui-listview li h2{
@@ -288,8 +288,16 @@ section > header > h1{
 	border-bottom: none !important;
 }
 
+.ui-be-mapa2 li h4{
+	text-align: center;
+}
+
 .onde_ficar{
 	margin-top: 9rem !important;
+}
+
+.ui-be-mapa3{
+	padding: 1rem !important;	
 }
 
 /*Novo index*/
@@ -395,9 +403,8 @@ section > header > h1{
 	text-decoration: none;
 }
 
+.ui-be-sobre h4 a{
+	text-decoration: none !important;
+}
 
-@media screen and (min-width: 640px) {
-  .ui-navbar ul li a{	
-	font-size: 100% !important;
-}
-}
+
