@@ -1,5 +1,5 @@
 {
-	"version": 2,
+	"version": 3,
 	"agenda10" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{
@@ -83,10 +83,10 @@
 			"descricao": "Plenary session",
 			"salahora": "10:20",
 			"itens": [
-				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
-				{"salahora": "10:30 - Versallis", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
-				{"salahora": "11:10 - Versallis", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
-				{"salahora": "11:50 - Versallis", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"}
+				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS", "link": "#palestrantes"},
+				{"salahora": "10:30 - Versallis", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc.", "link": "#palestrantes"},
+				{"salahora": "11:10 - Versallis", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS", "link": "#palestrantes"},
+				{"salahora": "11:50 - Versallis", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer", "link": "#palestrantes"}
 			]
 		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
@@ -349,6 +349,6 @@
 			]
 		},
 	
-		{"class": "ui-be-award", "salahora": "17:50", "titulo": "Convergence Best Paper Award / Academic Award", "info": "", "divisao": true}
+		{"class": "ui-be-award", "salahora": "17:50", "titulo": "Convergence Best Paper Award / Academic Award", "info": "", "divisao": true, "link": "#sobre2"}
 	]
 }

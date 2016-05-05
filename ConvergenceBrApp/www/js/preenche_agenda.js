@@ -1,6 +1,6 @@
 var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 {
-	"version": 2,
+	"version": 3,
 	"agenda10" : [
 		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{
@@ -84,10 +84,10 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"descricao": "Plenary session",
 			"salahora": "10:20",
 			"itens": [
-				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
-				{"salahora": "10:30 - Versallis", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
-				{"salahora": "11:10 - Versallis", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
-				{"salahora": "11:50 - Versallis", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"}
+				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS", "link": "#palestrantes"},
+				{"salahora": "10:30 - Versallis", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc.", "link": "#palestrantes"},
+				{"salahora": "11:10 - Versallis", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS", "link": "#palestrantes"},
+				{"salahora": "11:50 - Versallis", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer", "link": "#palestrantes"}
 			]
 		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
@@ -210,6 +210,7 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 		{"class": "ui-be-cocktail", "salahora": "18:10", "titulo": "Cocktail - atração musical", "info": "", "divisao": true}
 	],
 	"agenda12" : [
+		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{
 			"collapsible": true,
 			"class": "ui-be-engineering-workshops",
@@ -349,7 +350,7 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			]
 		},
 	
-		{"class": "ui-be-award", "salahora": "17:50", "titulo": "Convergence Best Paper Award / Academic Award", "info": "", "divisao": true}
+		{"class": "ui-be-award", "salahora": "17:50", "titulo": "Convergence Best Paper Award / Academic Award", "info": "", "divisao": true, "link": "#sobre2"}
 	]
 }
 ;
@@ -371,12 +372,10 @@ function populateAgenda(toPage) {
 	var lista = agenda[toPage];
 	var saida = '';
 	var linhaID = 0;
-	var plenary = false;
-
 
 	function populateSub (key, sub) {
 		$('<li data-icon="false"><a '+
-		( plenary ? 'href="#palestrantes"' : '' ) +
+		( sub.link ? 'href="' + sub.link + '"' : '' ) +
 		'><h2>' + sub.titulo + '</h2>' +
 		'<p>' + sub.info + '</p>' +
 		'<span>' + sub.salahora + '</span>' +
@@ -392,37 +391,27 @@ function populateAgenda(toPage) {
 			'<ul id="item-agenda-' + linhaID + '" data-role="listview">')
 			.appendTo('#' + toPage + ' .ui-be-agenda');
 
-			plenary = linha.class === 'ui-be-plenary-session';
-
 			$.each(linha.itens, populateSub);
-
-			//$('#' + toPage + ' #item-agenda-' + linhaID).listview("refresh");
 
 		} else {
 			$('<li class="' + linha.class + '" data-icon="false"' + (linha.divisao? ' data-role="list-divider"' : '') + '>'+
-			'<h2>' + linha.titulo + '</h2>' + 
+			'<a ' + ( linha.link ? 'href="' + linha.link + '"' : '' ) + '>' +
+			'<h2>' + linha.titulo + '</h2>' +
 			'<p>' + linha.info + '</p>' + 
 			'<span>' + linha.salahora + '</span>' +
-			'</li>')
+			'</a></li>')
 			.appendTo('#' + toPage + ' .ui-be-agenda');
 		}
 	}
 				
 	$.each(lista, populate);
 		
-	//$('#' + toPage + ' .ui-be-agenda').append(saida);
-	
 	hideLoading();
-
-	//$('#' + toPage + ' .ui-be-collapsible ul').listview("refresh");
 
 	$('#' + toPage + ' .ui-be-agenda').listview("refresh");
 
 	$('#' + toPage + ' .ui-be-collapsibleset').collapsibleset("refresh");
-
-
 }
-
 
 function getAgenda (toPage) {
 	function done () {
@@ -433,7 +422,7 @@ function getAgenda (toPage) {
 
 	$.getJSON(urlAgenda, function (data) {
 		if (data.version <= agenda.version) return;
-	
+
 		agenda = data;
 		localStorage.agenda = JSON.stringify(data);
 	});
