@@ -209,6 +209,7 @@
 		{"class": "ui-be-cocktail", "salahora": "18:10", "titulo": "Cocktail - atração musical", "info": "", "divisao": true}
 	],
 	"agenda12" : [
+		{"salahora": "8:00", "titulo": "Registration Open", "info": "", "divisao": true},
 		{
 			"collapsible": true,
 			"class": "ui-be-engineering-workshops",

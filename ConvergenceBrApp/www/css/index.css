@@ -82,7 +82,8 @@ section > header > h1{
 	margin-left: 0 !important;
 }
 
-.ui-content {
+.ui-content .ui-be-agenda{
+	margin-top: 8rem !important;
 	
 }
 
