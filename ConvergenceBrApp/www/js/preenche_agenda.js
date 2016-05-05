@@ -84,10 +84,10 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"descricao": "Plenary session",
 			"salahora": "10:20",
 			"itens": [
-				{"salahora": "10:20 - Versalles", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
-				{"salahora": "10:30 - Versalles", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
-				{"salahora": "11:10 - Versalles", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
-				{"salahora": "11:50 - Versalles", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"}
+				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
+				{"salahora": "10:30 - Versallis", "titulo": "Simulation for Breakthrough Innovation: Trends, Best Practices & ANSYS Simulation Platform", "info": "Ravi Kumar, ANSYS, Inc."},
+				{"salahora": "11:10 - Versallis", "titulo": "SIRIUS: Brazil at the vanguard of Engineering of Accelerators", "info": "Lucas Sanfelici, LNLS"},
+				{"salahora": "11:50 - Versallis", "titulo": "Design Validation & Decision Making", "info": "Luiz Carlos de Castro Santos, Embraer"}
 			]
 		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
@@ -169,8 +169,7 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"itens": [
 				{"salahora": "16:50 - Room Lorangerie I", "titulo": "Simulations performed at the Brazilian Synchrotron Light Source", "info": "Allan Gilmour Anderson Jr., LNLS"},
 				{"salahora": "17:10 - Room Lorangerie I", "titulo": "FEM Applications in Health Industry Equipment Evaluation", "info": "Bernardo Abrahão Campos Salles, GE Healthcare"},
-				{"salahora": "17:30 - Room Lorangerie I", "titulo": "Structure Analisys of a Shiploader - Upper and Lower Structures", "info": "Cristian Zarichta, TMSA"},
-				{"salahora": "17:50 - Room Lorangerie I", "titulo": "Impact Energy Absorption by Steel Plates", "info": "Mario Augusto Castro, Technip"}
+				{"salahora": "17:30 - Room Lorangerie I", "titulo": "Structure Analisys of a Shiploader - Upper and Lower Structures", "info": "Cristian Zarichta, TMSA"}
 			]
 		},
 		{
@@ -181,20 +180,18 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"itens": [
 				{"salahora": "16:50 - Room Lorangerie II", "titulo": "CFD Analysis on LNG Spheres Deluge System According to API Standard", "info": "Carlos Eduardo Reuther, PETROBRAS"},
 				{"salahora": "17:10 - Room Lorangerie II", "titulo": "Simulation CFD of a riser-FCC using the approach continuous lumping on the cracking reactions", "info": "José Luis Gomez Vergel, UNICAMP"},
-				{"salahora": "17:30 - Room Lorangerie II", "titulo": "Multiphase CFD Analysis of Submerged Air Blowing into a Copper Converter", "info": "Alexandre Dolabella, Magnesita"},
-				{"salahora": "17:50 - Room Lorangerie II", "titulo": "How CFD can help us: the past and future", "info": "Karolline Ropelato, ESSS"}
+				{"salahora": "17:30 - Room Lorangerie II", "titulo": "Multiphase CFD Analysis of Submerged Air Blowing into a Copper Converter", "info": "Alexandre Dolabella, Magnesita"}
 			]
 		},
 		{
 			"collapsible": true,
 			"class": "ui-be-technical-session",
-			"descricao": "Structural Mechanics",
+			"descricao": "Fluid Dynamics",
 			"salahora": "16:50",
 			"itens": [
 				{"salahora": "16:50 - Room Malmaison", "titulo": "CFX in the Pump Improvements and in Business Opportunities", "info": "Ismael Nicholas, Higra Industrial"},
 				{"salahora": "17:10 - Room Malmaison", "titulo": "Geometry Evaluation of PIG Iron Channel Using Computer Simulation", "info": "Leonardo Camilo dos Reis, Usiminas"},
-				{"salahora": "17:30 - Room Malmaison", "titulo": "Analysis of Cavity Modes in a Compressor Suction Muffler", "info": "Vitor Ferreira de Almeida, Tecumseh do Brasil"},
-				{"salahora": "17:50 - Room Malmaison", "titulo": "Coefficients of added mass for conceptual phase of platforms design", "info": "Thiago Pontin Tancredi, UFSC"}
+				{"salahora": "17:30 - Room Malmaison", "titulo": "Analysis of Cavity Modes in a Compressor Suction Muffler", "info": "Vitor Ferreira de Almeida, Tecumseh do Brasil"}
 			]
 		},
 		{
@@ -208,9 +205,9 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 				{"salahora": "17:30 - Room Chambord", "titulo": "Engineering the 'Internet of Things' Using Simulation", "info": "Juliano Mologni, ESSS"}
 			]
 		},
-		{"salahora": "18:10", "titulo": "Technical Discussion", "info": "", "divisao": true},
+		{"salahora": "17:50", "titulo": "Technical Discussion", "info": "", "divisao": true},
 		
-		{"class": "ui-be-cocktail", "salahora": "18:50", "titulo": "Cocktail", "info": "", "divisao": true}
+		{"class": "ui-be-cocktail", "salahora": "18:10", "titulo": "Cocktail - atração musical", "info": "", "divisao": true}
 	],
 	"agenda12" : [
 		{
@@ -231,10 +228,10 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"descricao": "Plenary session",
 			"salahora": "10:20",
 			"itens": [
-				{"salahora": "10:20 - Versalles", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
-				{"salahora": "10:30 - Versalles", "titulo": "CAE at Embraco: a Journey of 30 Years", "info": "Marcos Giovani de Bortoli, EMBRACO"},
-				{"salahora": "11:10 - Versalles", "titulo": "Horizons for Numerical Simulation", "info": "Cassiano Antunes Cezario, WEG"},
-				{"salahora": "11:50 - Versalles", "titulo": "Panel Discussion: Framework for Simulation", "info": ""}
+				{"salahora": "10:20 - Versallis", "titulo": "Opening", "info": "Clóvis Maliska Jr., ESSS"},
+				{"salahora": "10:30 - Versallis", "titulo": "CAE at Embraco: a Journey of 30 Years", "info": "Marcos Giovani de Bortoli, EMBRACO"},
+				{"salahora": "11:10 - Versallis", "titulo": "Horizons for Numerical Simulation", "info": "Cassiano Antunes Cezario, WEG"},
+				{"salahora": "11:50 - Versallis", "titulo": "Panel Discussion: Framework for Simulation", "info": ""}
 			]
 		},
 		{"salahora": "12:30", "titulo": "Lunch", "info": "", "divisao": true},
@@ -256,7 +253,7 @@ var agenda = false && localStorage.agenda ? JSON.parse(localStorage.agenda) :
 			"descricao": "Free Workshops",
 			"salahora": "14:30",
 			"itens": [
-				{"salahora": "14:30 - Room Lorangerie I", "titulo": "ANSYS SpaceClaim Direct Modeler", "info": "Rafael Vetturazzi, ESSS"},
+				{"salahora": "14:30 - Room Lorangerie I", "titulo": "ANSYS SpaceClaim Direct Modele", "info": "Rafael Vetturazzi, ESSS"},
 				{"salahora": "14:30 - Room Lorangerie II", "titulo": "ANSYS AIM: Simulation for Every Engineer", "info": "Luiz Amaral, ESSS"},
 				{"salahora": "14:30 - Room Malmaison", "titulo": "ROCKY and ANSYS CFD Coupling", "info": "Lucilla Almeida, ESSS"},
 				{"salahora": "14:30 - Room Chambord", "titulo": "CFD: CHEMKIN overview and hands on", "info": "Ana Paula Faria, ESSS"}
